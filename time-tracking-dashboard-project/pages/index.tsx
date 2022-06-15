@@ -13,34 +13,34 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.cardProfile}>
+          <a href="https://nextjs.org/docs" className={`${styles.cardProfile} ${styles.profile}`}>
             <h2>Profile &rarr;</h2>
             <p>Find in-depth information about Next.js features and API.</p>
           </a>
-          <a href="https://nextjs.org/docs" className={styles.card}>
+          <a href="https://nextjs.org/docs" className={`${styles.card} ${styles.work}`}>
             <h2>Work &rarr;</h2>
             <p>Find in-depth information about Next.js features and API.</p>
           </a>
-          <a href="https://nextjs.org/docs" className={styles.card}>
+          <a href="https://nextjs.org/docs" className={`${styles.card} ${styles.play}`}>
             <h2>Play &rarr;</h2>
             <p>Find in-depth information about Next.js features and API.</p>
           </a>
-          <a href="https://nextjs.org/docs" className={styles.card}>
+          <a href="https://nextjs.org/docs" className={`${styles.card} ${styles.study}`}>
             <h2>Study &rarr;</h2>
             <p>Find in-depth information about Next.js features and API.</p>
           </a>
         </div>
 
         <div className={styles.secondGrid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
+          <a href="https://nextjs.org/docs" className={`${styles.card} ${styles.exercise}`}>
             <h2>Exercise &rarr;</h2>
             <p>Find in-depth information about Next.js features and API.</p>
           </a>
-          <a href="https://nextjs.org/docs" className={styles.card}>
+          <a href="https://nextjs.org/docs" className={`${styles.card} ${styles.social}`}>
             <h2>Social &rarr;</h2>
             <p>Find in-depth information about Next.js features and API.</p>
           </a>
-          <a href="https://nextjs.org/docs" className={styles.card}>
+          <a href="https://nextjs.org/docs"  className={`${styles.card} ${styles.selfCare}`}>
             <h2>Self care &rarr;</h2>
             <p>Find in-depth information about Next.js features and API.</p>
           </a>

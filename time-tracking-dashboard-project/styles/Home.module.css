@@ -56,15 +56,6 @@
   font-size: 1.5rem;
 }
 
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
 .grid {
   display: flex;
   align-items: center;
@@ -74,8 +65,7 @@
 }
 
 .secondGrid {
-  margin: -30px;
-  margin-left: 280px;
+  margin: 5px 10px 10px 280px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -85,15 +75,42 @@
 
 .card {
   margin: 0.5rem;
-  margin-top: -265px;
+  margin-top: -150px;
   padding: 1.5rem;
   text-align: left;
   color: inherit;
   text-decoration: none;
-  border: 1px solid #eaeaea;
   border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
+  max-width: 250px;
+  background-color: var(--dark-blue-ii);
+}
+
+.work {
+  border-top: 40px solid var(--light-red-i);
+}
+
+.play {
+  border-top: 40px solid var(--soft-blue);
+}
+
+.study {
+  border-top: 40px solid var(--light-red-ii);
+}
+
+.exercise {
+  border-top: 40px solid var(--lime-green);
+}
+
+.social {
+  border-top: 40px solid var(--violet);
+}
+
+.selfCare {
+  border-top: 40px solid var(--soft-orange);
+}
+
+.profile {
+  border-top: 300px solid var(--desaturated-blue);
 }
 
 .cardProfile {
@@ -102,12 +119,11 @@
   text-align: left;
   color: inherit;
   text-decoration: none;
-  border: 1px solid #eaeaea;
   border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
+  max-width: 250px;
   height: 450px;
-  
+  background-color: var(--dark-blue-ii);
+
 }
 
 .logo {
@@ -115,32 +131,25 @@
   margin-left: 0.5rem;
 }
 
-@media (max-width: 810px) {
+@media (max-width: 900px) {
   .card {
-    margin: 2.0rem;
+    margin: 0.5rem;
   }
+
+  .cardProfile {
+    max-width: 250px;
+    height: 252px;
+    margin: 0.5rem;
+  }
+
   .grid {
     width: 100%;
     flex-direction: column;
   }
+
   .secondGrid {
     width: 100%;
     margin: 0.5rem;
     flex-direction: column;
   }
 }
-
-/* @media (max-width: 1280px) {
-  .card {
-    margin: 0.5rem;
-    margin-top: -258px;
-  }
-  .grid {
-    flex-wrap: wrap;
-  }
-  .secondGrid {
-    width: 100%;
-    margin: 0.5rem;
-    flex-direction: column;
-  }
-} */
