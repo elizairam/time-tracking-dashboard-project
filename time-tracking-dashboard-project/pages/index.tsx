@@ -2,6 +2,8 @@ import Head from "next/head";
 import Card from "../components/Card";
 import CardProfile from "../components/CardProfile";
 import styles from "../styles/Home.module.css";
+import Image from "next/image";
+import Icon from "../components/Icon";
 
 export default function Home() {
   return (
@@ -15,12 +17,16 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.grid}>
           <div className={`${styles.cardProfile} ${styles.profile}`}>
-            <CardProfile selectDaily={false} selectWeekly={false} selectMonthly={false} />
+            <CardProfile
+              selectDaily={false}
+              selectWeekly={false}
+              selectMonthly={false}
+            />
           </div>
 
           <div className={`${styles.card} ${styles.work}`}>
+            <Icon type={"work"} />
             <Card
-              icon={undefined}
               title={"Work"}
               current={0}
               previous={0}
@@ -28,8 +34,8 @@ export default function Home() {
             />
           </div>
           <div className={`${styles.card} ${styles.play}`}>
+            <Icon type={"play"} />
             <Card
-              icon={undefined}
               title={"Play"}
               current={0}
               previous={0}
@@ -37,8 +43,8 @@ export default function Home() {
             />
           </div>
           <div className={`${styles.card} ${styles.study}`}>
+            <Icon type={"study"} />
             <Card
-              icon={undefined}
               title={"Study"}
               current={0}
               previous={0}
@@ -49,8 +55,8 @@ export default function Home() {
 
         <div className={styles.secondGrid}>
           <div className={`${styles.card} ${styles.exercise}`}>
+            <Icon type={"exercise"} />
             <Card
-              icon={undefined}
               title={"Exercise"}
               current={0}
               previous={0}
@@ -58,8 +64,8 @@ export default function Home() {
             />
           </div>
           <div className={`${styles.card} ${styles.social}`}>
+            <Icon type={"social"} />
             <Card
-              icon={undefined}
               title={"Social"}
               current={0}
               previous={0}
@@ -67,8 +73,8 @@ export default function Home() {
             />
           </div>
           <div className={`${styles.card} ${styles.selfCare}`}>
+            <Icon type={"self-care"} />
             <Card
-              icon={undefined}
               title={"Self Care"}
               current={0}
               previous={0}

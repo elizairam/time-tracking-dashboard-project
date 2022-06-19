@@ -1,7 +1,6 @@
 import { ReactNode } from "react";
 
 interface ICard {
-  icon: ReactNode;
   title: string;
   current: number;
   previous: number;
