@@ -1,5 +1,3 @@
-import { ReactNode } from "react";
-
 interface ICard {
   title: string;
   current: number;

@@ -2,7 +2,6 @@ import Head from "next/head";
 import Card from "../components/Card";
 import CardProfile from "../components/CardProfile";
 import styles from "../styles/Home.module.css";
-import Image from "next/image";
 import Icon from "../components/Icon";
 
 export default function Home() {
