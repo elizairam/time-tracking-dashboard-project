@@ -1,24 +1,17 @@
+import { MouseEventHandler } from "react";
+
 interface ICardProfile {
-  selectDaily: boolean;
-  selectWeekly: boolean;
-  selectMonthly: boolean;
+  changeDay: MouseEventHandler<HTMLLIElement>;
+  changeWeek: MouseEventHandler<HTMLLIElement>;
+  changeMonth: MouseEventHandler<HTMLLIElement>;
 }
 
 export default function CardProfile(props: ICardProfile) {
   return (
     <ul>
-      <li>
-        {" "}
-        {"Daily"} {props.selectDaily}
-      </li>
-      <li>
-        {" "}
-        {"Weekly"} {props.selectWeekly}
-      </li>
-      <li>
-        {" "}
-        {"Monthly"} {props.selectMonthly}
-      </li>
+      <li onClick={props.changeDay}>{"Daily"}</li>
+      <li onClick={props.changeWeek}>{"Weekly"}</li>
+      <li onClick={props.changeMonth}>{"Monthly"}</li>
     </ul>
   );
 }
