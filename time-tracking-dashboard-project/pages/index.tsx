@@ -151,9 +151,9 @@ export default function Home() {
     reference: "month",
   });
 
-  const changeTimeFrameDaily = () => setDataReference(daily);
-  const changeTimeFrameWeekly = () => setDataReference(weekly);
-  const changeTimeFrameMonthly = () => setDataReference(monthly);
+  const changeTimeframeDaily = () => setDataReference(daily);
+  const changeTimeframeWeekly = () => setDataReference(weekly);
+  const changeTimeframeMonthly = () => setDataReference(monthly);
 
   return (
     <div className={styles.container}>
@@ -169,9 +169,9 @@ export default function Home() {
         <div className={styles.grid}>
           <div className={`${styles.cardProfile} ${styles.profile}`}>
             <CardProfile
-              changeDay={changeTimeFrameDaily}
-              changeWeek={changeTimeFrameWeekly}
-              changeMonth={changeTimeFrameMonthly}
+              changeDay={changeTimeframeDaily}
+              changeWeek={changeTimeframeWeekly}
+              changeMonth={changeTimeframeMonthly}
             />
           </div>
 
