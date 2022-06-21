@@ -4,121 +4,18 @@ import CardProfile from "../components/CardProfile";
 import styles from "../styles/Home.module.css";
 import Icon from "../components/Icon";
 import { useState } from "react";
-
-const data = [
-  {
-    title: "Work",
-    timeframes: {
-      daily: {
-        current: 5,
-        previous: 7,
-      },
-      weekly: {
-        current: 32,
-        previous: 36,
-      },
-      monthly: {
-        current: 103,
-        previous: 128,
-      },
-    },
-  },
-  {
-    title: "Play",
-    timeframes: {
-      daily: {
-        current: 1,
-        previous: 2,
-      },
-      weekly: {
-        current: 10,
-        previous: 8,
-      },
-      monthly: {
-        current: 23,
-        previous: 29,
-      },
-    },
-  },
-  {
-    title: "Study",
-    timeframes: {
-      daily: {
-        current: 0,
-        previous: 1,
-      },
-      weekly: {
-        current: 4,
-        previous: 7,
-      },
-      monthly: {
-        current: 13,
-        previous: 19,
-      },
-    },
-  },
-  {
-    title: "Exercise",
-    timeframes: {
-      daily: {
-        current: 1,
-        previous: 1,
-      },
-      weekly: {
-        current: 4,
-        previous: 5,
-      },
-      monthly: {
-        current: 11,
-        previous: 18,
-      },
-    },
-  },
-  {
-    title: "Social",
-    timeframes: {
-      daily: {
-        current: 1,
-        previous: 3,
-      },
-      weekly: {
-        current: 5,
-        previous: 10,
-      },
-      monthly: {
-        current: 21,
-        previous: 23,
-      },
-    },
-  },
-  {
-    title: "Self Care",
-    timeframes: {
-      daily: {
-        current: 0,
-        previous: 1,
-      },
-      weekly: {
-        current: 2,
-        previous: 2,
-      },
-      monthly: {
-        current: 7,
-        previous: 11,
-      },
-    },
-  },
-];
+import { data } from "./data";
+import ProfilePicture from "../components/ProfilePicture";
 
 export default function Home() {
   const [dataReference, setDataReference] = useState({
-    work: data[0].timeframes.daily,
-    play: data[1].timeframes.daily,
-    study: data[2].timeframes.daily,
-    exercise: data[3].timeframes.daily,
-    social: data[4].timeframes.daily,
-    selfCare: data[5].timeframes.daily,
-    reference: "day",
+    work: data[0].timeframes.weekly,
+    play: data[1].timeframes.weekly,
+    study: data[2].timeframes.weekly,
+    exercise: data[3].timeframes.weekly,
+    social: data[4].timeframes.weekly,
+    selfCare: data[5].timeframes.weekly,
+    reference: "week",
   });
 
   const [daily] = useState({
@@ -167,6 +64,9 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <div className={styles.grid}>
+          <div className={styles.picture}>
+            <ProfilePicture />
+          </div>
           <div className={`${styles.cardProfile} ${styles.profile}`}>
             <CardProfile
               changeDay={changeTimeframeDaily}
@@ -185,7 +85,7 @@ export default function Home() {
             />
           </div>
           <div className={`${styles.card} ${styles.play}`}>
-            <Icon type={data[1].title} />
+            <Icon type={"play"} />
             <Card
               title={"Play"}
               current={dataReference.play.current}

@@ -11,7 +11,7 @@ export default function Card(props: ICard) {
       <h5>{props.title}</h5>
       <h1>{props.current}{"hrs"}</h1>
       <h6>
-        {"Last"} {props.reference} {props.previous} { "hrs"}
+        {"Last"} {props.reference} - {props.previous} { "hrs"}
       </h6>
     </>
   );

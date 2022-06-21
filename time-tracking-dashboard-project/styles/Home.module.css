@@ -21,7 +21,7 @@
 }
 
 .secondGrid {
-  margin: -5px 10px 10px 280px;
+  margin: -5px 10px 10px 250px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -82,12 +82,19 @@
 
 }
 
-@media (max-width: 900px) {
+.picture {
+  margin-top: -300px;
+  margin-right: -110px;
+  text-align: "left";
+}
+
+@media screen and (max-width: 900px) {
   .card {
     margin: 0.5rem;
   }
 
   .cardProfile {
+    display: flex;
     max-width: 250px;
     height: 100px;
     margin: 0.5rem;
@@ -101,6 +108,10 @@
 
   }
 
+  .picture {
+    margin-top: 50px;
+  }
+
   .grid {
     width: 100%;
     flex-direction: column;
@@ -110,6 +121,40 @@
     width: 100%;
     margin: 0.5rem;
     flex-direction: column;
+  }
+
+}
+
+
+@media screen and (max-width: 1200px) {
+  .card {
+    margin: 0.5rem;
+  }
+
+  .cardProfile {
+    max-width: 250px;
+    margin: 0.5rem;
+  }
+
+  .profile {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 10px 10px 30px;
+  }
+
+  .picture {
+    margin-top: -50px;
+  }
+
+  .grid {
+    width: 100%;
+    flex-direction: row;
+  }
+
+  .secondGrid {
+    width: 100%;
+    margin: 0.5rem;
+    flex-direction: row;
   }
 
 }
