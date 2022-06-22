@@ -25,11 +25,11 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.PNG)
+![](./time-tracking-dashboard-project/public/screenshot.PNG)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Add solution URL here](https://time-tracking-dashboard-project-solution.vercel.app/)
 
 
 ### Built with
