@@ -5,7 +5,6 @@ import styles from "../styles/Home.module.css";
 import Icon from "../components/Icon";
 import { useState } from "react";
 import { data } from "../utils/data";
-import ProfilePicture from "../components/ProfilePicture";
 import ReportUser from "../components/ReportUser";
 
 export default function Home() {
@@ -66,7 +65,11 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.grid}>
           <div className={styles.reportUser}>
-            <ReportUser user={"Jeremy Robson"} src={"/image-jeremy.png"} alt={"profile picture"}/>
+            <ReportUser
+              user={"Jeremy Robson"}
+              src={"/image-jeremy.png"}
+              alt={"profile picture"}
+            />
           </div>
           <div className={`${styles.cardProfile} ${styles.profile}`}>
             <CardProfile
