@@ -24,6 +24,20 @@ li {
   padding: 5px;
 }
 
+li:hover,
+li:active {
+  color: var(--pale-blue);  
+}
+
+
+h1 {
+  font-size: 40px;
+}
+
+h6 {
+  color: var(--pale-blue);
+}
+
 :root {
   /* primary */
   --blue: hsl(246, 80%, 60%);
@@ -47,9 +61,23 @@ li {
   li {
     list-style: none;
     float: left;
-    margin: -11px;
-    padding-left: 25px;
-    align-items: center;
+    margin-top: -2px;
+    padding-left: 12px;
+    
+  
+  }
+
+  h1 {
+    margin-top: -15px;
+    font-size: 28px;
+    text-align: left;
+    padding: 6px;
+  }
+
+  h6 {
+    text-align: right;
+    margin-top: -12px;
+    padding: 2px;
 
   }
 }

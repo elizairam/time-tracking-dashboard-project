@@ -4,8 +4,9 @@ import CardProfile from "../components/CardProfile";
 import styles from "../styles/Home.module.css";
 import Icon from "../components/Icon";
 import { useState } from "react";
-import { data } from "./data";
+import { data } from "../utils/data";
 import ProfilePicture from "../components/ProfilePicture";
+import ReportUser from "../components/ReportUser";
 
 export default function Home() {
   const [dataReference, setDataReference] = useState({
@@ -64,8 +65,8 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <div className={styles.grid}>
-          <div className={styles.picture}>
-            <ProfilePicture />
+          <div className={styles.reportUser}>
+            <ReportUser user={"Jeremy Robson"} src={"/image-jeremy.png"} alt={"profile picture"}/>
           </div>
           <div className={`${styles.cardProfile} ${styles.profile}`}>
             <CardProfile
@@ -87,7 +88,7 @@ export default function Home() {
           <div className={`${styles.card} ${styles.play}`}>
             <Icon type={"play"} />
             <Card
-              title={"Play"}
+              title={data[1].title}
               current={dataReference.play.current}
               previous={dataReference.play.previous}
               reference={dataReference.reference}
