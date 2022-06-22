@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://time-tracking-dashboard-project-solution.vercel.app/)
+- Solution URL: [Time tracking dashboard](https://time-tracking-dashboard-project-solution.vercel.app/)
 
 
 ### Built with
