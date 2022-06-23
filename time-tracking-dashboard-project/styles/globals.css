@@ -22,6 +22,7 @@ ul,
 li {
   list-style: none;
   padding: 5px;
+  cursor: pointer;
 }
 
 li:hover,
@@ -55,16 +56,16 @@ h6 {
   --pale-blue: hsl(236, 100%, 87%);
 }
 
-@media (max-width: 900px) {
+@media screen and (max-width: 1199px) {
 
   ul,
   li {
     list-style: none;
     float: left;
-    margin-top: -2px;
-    padding-left: 12px;
-    
-  
+    margin-top: -10px;
+    display: block; 
+    padding: 10px;
+    cursor: pointer;
   }
 
   h1 {
@@ -80,4 +81,5 @@ h6 {
     padding: 2px;
 
   }
+
 }
